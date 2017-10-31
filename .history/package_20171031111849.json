@@ -1,0 +1,45 @@
+{
+    "name": "run-in-pgsql",
+    "displayName": "Run In PostgreSQL",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "babak",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:pgsql.runSelectionOrFile"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "pgsql.runSelectionOrFile",
+                "title": "Run in PostgreSQL"
+            }
+        ]
+    },
+    "keybindings": [
+        {
+          "command": "pgsql.runSelectionOrFile",
+          "key": "ctrl+shift+;",
+          "mac": "cmd+shift+;"
+        }
+      ],
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.5.3",
+        "vscode": "^1.1.5",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
