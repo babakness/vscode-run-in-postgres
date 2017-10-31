@@ -11,6 +11,7 @@ in your `settings.json`. If no text is selected and if the scope of the entire p
 This work is based on the following repos:
 
 https://github.com/doublefint/vscode-pgsql
+
 https://github.com/jptarqu/VSCodeExtension-PostgreSQL
 
 Project initialized as follows:
