@@ -24,12 +24,12 @@
     },
     "keybindings": [
         {
-          "command": "pgsql.runSelectionOrFile",
-          "key": "ctrl+shift+;",
-          "mac": "cmd+shift+;",
-          "when": "editorTextFocus"
+            "command": "pgsql.runSelectionOrFile",
+            "key": "ctrl+shift+;",
+            "mac": "cmd+shift+;",
+            "when": "editorTextFocus"
         }
-      ],
+    ],
     "scripts": {
         "vscode:prepublish": "npm run compile",
         "compile": "tsc -p ./",
